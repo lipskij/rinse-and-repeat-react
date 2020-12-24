@@ -1,13 +1,13 @@
 import './Home.css';
-import images from './images';
+import ImageSlider from './ImageSlider';
+import {ImageData} from './ImageData';
 
 const Home = () => {
-
   return (
     <div className="home">
-      <h2>Homepage</h2>
+      <h2>Bikes</h2>
       <div className="images">
-        {images.map(({id, src}) => <img alt='bike' key={id} src={src}/>)}
+        <ImageSlider slides={ImageData}/>
       </div>
     </div>
   );

@@ -6,14 +6,26 @@
   align-items: center;
 }
 
-.images {
-  width: 100vw;
-  margin: 0 auto;
+.slider {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
 }
 
-.images img {
-  display: block;
-  width: 20%;
-  margin: auto;
-  padding-top: 1rem;
+.image {
+  width: 500px;
+  height: 350px;
+  padding-bottom: 1rem;
+}
+
+.btn {
+  display: flex;
+  padding: 1rem;
 }
